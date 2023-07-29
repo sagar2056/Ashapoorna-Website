@@ -1,0 +1,52 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload Files and Info</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class="container">
+            <h2>Upload and Update details</h2>
+            <form class="form-horizontal" action="/upload" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="name">Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Enter name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="price">Price:</label>
+                    <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="price" placeholder="Enter price" name="price">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="number">Number:</label>
+                    <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="number" placeholder="Enter number" name="number">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10">          
+                        <input type="file" class="form-control" id="avatar" placeholder="Upload File" name="avatar">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10">          
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </body>
+</html>
